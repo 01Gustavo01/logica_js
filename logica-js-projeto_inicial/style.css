@@ -7,17 +7,16 @@
 
 body {
     background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
-
 
 body::before {
     background-image: url("img/code.png");
-    background-repeat: no-repeat;
-    background-position: right;
+    background-repeat: repeat;
     content: "";
     display: block;
     position: absolute;
@@ -27,44 +26,44 @@ body::before {
 }
 
 .container {
-    width: 1200px;
-    height: 600px;
+    width: 90%;
+    max-width: 600px; /* Limitando a largura máxima para telas maiores */
+    height: auto;
     display: flex;
+    flex-direction: column; /* Mudando para coluna em telas menores */
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 24px;
     border: 1px solid #1875E8;
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
     background-image: url("img/Ruido.png");
-    background-size: 100% 100%;
+    background-repeat: repeat;
+    background-size: auto;
     position: relative;
+    padding: 20px;
 }
 
 .container__conteudo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    width: 100%;
+    text-align: center; /* Centralizando o texto */
+}
+
+.container__imagem-robo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Adicionando espaço entre a imagem e o texto */
 }
 
 .container__informacoes {
-    flex: 1;
-    padding: 20px;
-}
-
-.container__botao {
-    border-radius: 16px;
-    background: #1875E8;
-    padding: 16px 24px;
-    width: 100%;
-    font-size: 24px;
-    font-weight: 700;
-    border: none;
-    margin-top: 16px;
+    padding-left: 0;
 }
 
 .container__texto {
-    margin: 16px 0 16px 0;
+    margin: 16px 0;
 }
 
 .container__texto-azul {
@@ -73,16 +72,24 @@ body::before {
 
 h1 {
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 72px;
+    font-size: 48px;
 }
 
 h2,
-p,
-button {
+p {
     font-family: 'Inter', sans-serif;
 }
 
 h2 {
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 24px;
+}
+
+.container__botao {
+    border-radius: 16px;
+    background: #1875E8;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    margin-top: 16px;
 }
