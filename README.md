@@ -1,18 +1,19 @@
-# Sorteio de Número
+# Jogo de Adivinhação de Número Secreto
 
-Este é um simples projeto de sorteio de número desenvolvido em JavaScript, HTML e CSS. Ele permite ao usuário inserir um intervalo de números e tentar adivinhar um número aleatório gerado pelo programa.
+Este é um simples jogo de adivinhação de número secreto desenvolvido em JavaScript, HTML e CSS.
 
 ## Funcionalidades
 
-- O usuário pode inserir um intervalo de números para o sorteio.
-- O programa gera um número aleatório dentro do intervalo especificado.
-- O usuário pode inserir uma tentativa para adivinhar o número.
-- O programa informa se a tentativa foi correta ou não.
+- O jogador tenta adivinhar um número secreto gerado aleatoriamente.
+- O jogador recebe dicas sobre se o palpite está muito alto ou muito baixo.
+- O jogador tem um número limitado de tentativas para adivinhar o número.
 
 ## Tecnologias Utilizadas
 
-- JavaScript: Para a lógica do sorteio e interações com o usuário.
-- HTML: Para a estrutura da página web.
-- CSS: Para estilização da página.
+- JavaScript
+- HTML
+- CSS
 
-## Como Usar
+## Experimente Agora
+
+Você pode jogar o jogo de adivinhação de número secreto [aqui](https://logica-js-two.vercel.app/).
